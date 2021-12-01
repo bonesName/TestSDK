@@ -18,22 +18,22 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+                          TestSDK
                        DESC
 
   s.homepage         = 'https://github.com/bonesName/TestSDK'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'bonesName' => 'Bones@88tech.net' }
-  s.source           = { :git => 'https://github.com/bonesName/TestSDK.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/bonesName/TestSDK.git', :tag => 'v0.0.2' }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'TestSDK/Classes/**/*'
+#  s.source_files = 'TestSDK/Classes/**/*'
   
   #自己的逻辑代码
-#  s.source_files  = "DemoSDKSample/Classes/**/*.{h,m}"
+  s.source_files  = "TestSDK/Classes/**/*.{h,m}"
   #依赖自己的或别人的Framework文件
   s.vendored_frameworks = 'TestSDK/Classes/*.framework'
    #系统依赖库
