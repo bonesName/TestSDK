@@ -32,6 +32,27 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'TestSDK/Classes/**/*'
   
+  #自己的逻辑代码
+#  s.source_files  = "DemoSDKSample/Classes/**/*.{h,m}"
+  #依赖自己的或别人的Framework文件
+  s.vendored_frameworks = 'TestSDK/Classes/*.framework'
+   #系统依赖库
+   s.frameworks = 'UIKit', 'CoreLocation','Foundation'
+   
+   s.resource_bundles = {
+     'LiveSDKIcon' => ['LiveSDKIcon/*.png']
+   }
+   s.dependency 'AFNetworking'
+   s.dependency 'SDWebImage'
+   s.dependency 'MJRefresh'
+   s.dependency 'MJExtension'
+   s.dependency 'Masonry'
+   s.dependency 'MBProgressHUD', '~> 0.9.2'
+   s.dependency 'BlocksKit'
+   s.dependency 'QBImagePickerController'
+   s.dependency 'CWStatusBarNotification'
+   s.dependency 'TXIMSDK_iOS'
+   s.dependency 'TXLiteAVSDK_Professional'
   # s.resource_bundles = {
   #   'TestSDK' => ['TestSDK/Assets/*.png']
   # }
